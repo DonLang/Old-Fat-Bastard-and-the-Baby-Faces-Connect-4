@@ -11,5 +11,6 @@ var dropPiece = function(column) {
     $('.can-place.' + (columnNumber)).css('background-image', 'url(imgs/fat-bastard.png)').removeClass('can-place');
     $('#'+(position)).addClass('can-place')
     console.log($('#'+(position)));
+
   }
 }
