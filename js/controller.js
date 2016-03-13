@@ -14,24 +14,31 @@ $(document).ready(function(){
 
   $('#h1').on('click', function(){
    addColor(0);
+   dropPiece(1);
  })
   $('#h2').on('click', function(){
    addColor(1);
+   dropPiece(2);
  })
   $('#h3').on('click', function(){
    addColor(2);
+   dropPiece(3);
  })
   $('#h4').on('click', function(){
    addColor(3);
+   dropPiece(4);
  })
   $('#h5').on('click', function(){
    addColor(4);
+   dropPiece(5);
  })
   $('#h6').on('click', function(){
    addColor(5);
+   dropPiece(6);
  })
   $('#h7').on('click', function(){
    addColor(6);
+   dropPiece(7);
  })
 
 })
