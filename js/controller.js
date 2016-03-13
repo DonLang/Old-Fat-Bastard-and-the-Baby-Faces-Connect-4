@@ -27,7 +27,6 @@ $(document).ready(function(){
 
 
 
-
 })
 
 var printEach = function(element){console.log(element);
@@ -39,13 +38,17 @@ var addColor=function(number){
   var i = false;
   do{
     if(board[number][counter]==0){board[number][counter]= letter;
+      console.log("column: " + number);
+      console.log("row: " + counter);
       i=true;
       player += 1;};
+      var isVic = isVictory(board, number, counter);
       counter++;
       if(counter === 6){i = true;};
     }while (i != true)
     console.log('**********')
     board.forEach(printEach)
+    if (isVic == true) { alert(letter + " Win!") };
   }
 
 
@@ -53,6 +56,6 @@ var addColor=function(number){
 
 
   var switchPlayer= function(){
-    if(player % 2 === 0){letter = '1'}
-      else {letter = '2'}
+    if(player % 2 === 0){letter = 'Fat'}
+      else {letter = 'Baby'}
     }
