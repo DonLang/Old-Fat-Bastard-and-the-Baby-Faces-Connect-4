@@ -22,3 +22,7 @@ body {
   font-size: 6em;
   text-transform: uppercase;
 }
+
+.btn {
+  margin-top: 40px;
+}

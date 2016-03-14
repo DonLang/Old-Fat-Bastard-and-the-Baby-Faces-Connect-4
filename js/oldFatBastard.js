@@ -39,8 +39,8 @@ var fatBastard = function() {
 
 var fatBastardWins = function() {
   $(document.body).css('background-color', '#000');
-  $('.winner').prepend('<h1>Old Fat Bastard Wins!</h1>');
-  $('.winner').append('<iframe style="position: absolute; top: 175px; left: 20%;" width="853" height="480" src="http://www.youtube.com/embed/LXekH_8vXnM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1;" frameborder="0" allowfullscreen></iframe>');
+  $('.winner').prepend('<h1>Old Fat Bastard Wins!</h1>').css('height', '2000px');
+  $('.winner').append('<iframe style="width: 100%; position: absolute; top: 175px; margin-left: -50%; left: 50%;" width="853" height="480" src="http://www.youtube.com/embed/LXekH_8vXnM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1;" frameborder="0" allowfullscreen></iframe>');
   setTimeout(function() {
     $('.winner').fadeOut('slow');
     $('.board-wrapper').show();
@@ -54,8 +54,8 @@ var fatBastardWins = function() {
 
 var babyWins = function() {
   $(document.body).css('background-color', '#000');
-  $('.winner').fadeIn('slow').prepend('<h1 class="baby">Baby Wins!</h1>');
-  $('.winner').append('<iframe style="position: absolute; top: 175px; left: 20%;" src="https://player.vimeo.com/video/158847086?title=0&byline=0&portrait=0&amp;autoplay=1;" width="853" height="479" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+  $('.winner').fadeIn('slow').prepend('<h1 class="baby">Baby Wins!</h1>').css('height', '2000px');
+  $('.winner').append('<iframe style="width: 100%; position: absolute; top: 175px; margin-left: -50%; left: 50%;" src="https://player.vimeo.com/video/158847086?title=0&byline=0&portrait=0&amp;autoplay=1;" width="853" height="479" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
   setTimeout(function() {
     $('.winner').fadeOut('slow');
     $('.board-wrapper').show();

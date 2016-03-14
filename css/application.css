@@ -57,9 +57,8 @@ canvas {
 
 .winner h1 {
   font-family: 'Monoton', cursive;
-  position: absolute;
-  top: 20px;
-  left: 10%;
+  margin: 0 auto;
+  margin-top: 35px;
   font-size: 6em;
   color: red;
   text-align: center;
