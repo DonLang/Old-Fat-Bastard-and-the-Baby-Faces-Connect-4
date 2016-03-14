@@ -10,12 +10,20 @@ var board = [
 
 player = 1
 
+// $('.button-color-2').hover(function() {
+// dosmth();
+// $(this).unbind('mouseenter mouseleave')
+// });
+
 $(document).ready(function(){
+
+  $('.header-token').one('hover', baby());
 
   $('#h1').on('click', function(){
    dropPiece(1);
    addColor(0);
  })
+
   $('#h2').on('click', function(){
    dropPiece(2);
    addColor(1);
@@ -37,9 +45,13 @@ $(document).ready(function(){
    addColor(5);
  })
   $('#h7').on('click', function(){
-   dropPiece(7);
+   dropPiece(7, player);
    addColor(6);
  })
+
+  $('button').on('click', function() {
+    location.reload(true);
+  })
 
 })
 
@@ -57,16 +69,24 @@ var addColor = function(number) {
       console.log("column: " + number);
       console.log("row: " + counter);
       i=true;
-      player += 1;};
+      player += 1;
+      };
       var isVic = isVictory(board, number, counter);
       counter++;
       if(counter === 6){i = true;};
     }while (i != true)
     console.log('**********')
     board.forEach(printEach);
-    if (isVic == true) { alert(letter + " Win!") };
+    if (isVic == true) { 
+      $('.board-wrapper').hide();
+      $('.winner').show().css('height', '800px');
+      if (player % 2) {
+        fatBastardWins();
+      } else {
+        babyWins();
+      }
+    };
   }
-
 
 var switchPlayer = function() {
   if (player % 2) {

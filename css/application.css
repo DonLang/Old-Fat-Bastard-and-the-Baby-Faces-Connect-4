@@ -13,11 +13,17 @@
   background-color: #ffffff;
   border-radius: 50%;
   margin: 0 auto;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .board-wrapper {
   width: 770px;
   background-color: yellow;
+  -webkit-box-shadow: 0 5px 2px #000;
+  -moz-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
 }
 
 .board-row1 {
@@ -37,4 +43,49 @@ canvas {
   background-color: #ffffff;
   border-radius: 50%;
   margin: 0 auto;
+  -webkit-box-shadow: 0 0 3px #000;
+  -moz-box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px #000;
 }
+
+.winner {
+  display: none;
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+}
+
+.winner h1 {
+  font-family: 'Monoton', cursive;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 6em;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 80px red;
+  text-shadow: 0 0 30px fire-brick;
+  text-shadow: 0 0 6px dark-red;
+  text-transform: uppercase;
+
+}
+
+.reset-wrapper {
+  position: relative;
+}
+
+.reset {
+  display: none;
+  position: absolute;
+  margin-top: 175px;
+  left: 80px;
+  z-index: 1;
+}
+
+.winner h1.baby {
+  left: 30%;
+}
+
+/*.reset button {
+  margin-left: 80px;
+}*/

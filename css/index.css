@@ -1,0 +1,28 @@
+body {
+  background-color: #000000;
+  font-family: 'Monoton', cursive;
+  line-height: 2em;
+}
+
+.ofb h1 {
+  margin-top: 50px;
+  color: #ffffff;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.bvfb h1 {
+  margin-top: 75px;
+  color: #f00000;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.bvfb h2 {
+  font-size: 6em;
+  text-transform: uppercase;
+}
+
+.btn {
+  margin-top: 40px;
+}
