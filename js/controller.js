@@ -17,10 +17,6 @@ player = 1
 
 $(document).ready(function(){
 
-  // baby(function() {
-  //   $(this).unbind('mouseenter mouseleave')
-  // })
-
   $('.header-token').one('hover', baby());
 
   $('#h1').on('click', function(){

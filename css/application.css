@@ -56,13 +56,19 @@ canvas {
 }
 
 .winner h1 {
+  font-family: 'Monoton', cursive;
   position: absolute;
   top: 20px;
   left: 10%;
-  font-size: 8em;
+  font-size: 6em;
   color: red;
   text-align: center;
   font-weight: bold;
+  text-shadow: 0 0 80px red;
+  text-shadow: 0 0 30px fire-brick;
+  text-shadow: 0 0 6px dark-red;
+  text-transform: uppercase;
+
 }
 
 .reset-wrapper {

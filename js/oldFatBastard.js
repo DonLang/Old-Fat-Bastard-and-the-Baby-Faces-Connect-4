@@ -38,6 +38,7 @@ var fatBastard = function() {
 }
 
 var fatBastardWins = function() {
+  $(document.body).css('background-color', '#000');
   $('.winner').prepend('<h1>Old Fat Bastard Wins!</h1>');
   $('.winner').append('<iframe style="position: absolute; top: 175px; left: 20%;" width="853" height="480" src="http://www.youtube.com/embed/LXekH_8vXnM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1;" frameborder="0" allowfullscreen></iframe>');
   setTimeout(function() {
@@ -47,10 +48,12 @@ var fatBastardWins = function() {
   }, 10000);
   setTimeout(function() {
     $('.winner').find('iframe').remove();
+    $(document.body).css('background-color', '#FFF');
   }, 10000);
 }
 
 var babyWins = function() {
+  $(document.body).css('background-color', '#000');
   $('.winner').fadeIn('slow').prepend('<h1 class="baby">Baby Wins!</h1>');
   $('.winner').append('<iframe style="position: absolute; top: 175px; left: 20%;" src="https://player.vimeo.com/video/158847086?title=0&byline=0&portrait=0&amp;autoplay=1;" width="853" height="479" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
   setTimeout(function() {
@@ -60,5 +63,6 @@ var babyWins = function() {
   }, 17000);
   setTimeout(function() {
     $('.winner').find('iframe').remove();
+    $(document.body).css('background-color', '#FFF');
   }, 17000);
 }

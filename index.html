@@ -5,13 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/application.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="imgs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imgs/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imgs/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imgs/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imgs/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imgs/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imgs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+
+    <link href="http://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/application.js"></script>
-    <script src="js/oldFatBastard.js"></script>
-    <script src="js/controller.js"></script>
+    <script type="text/javascript" src="js/jquery.novacancy.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <title>Old Fat Bastard and the Baby Faces</title>
@@ -19,83 +33,47 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-12">
-          <div class="winner center-block">
-            <div class="winner-video"></div>
+        <div class="col-sm-12 opening">
+          <div class="ofb text-center">
+            <h1 id="no">
+              Old&nbsp;&nbsp;&nbsp;&nbsp;Fat&nbsp;&nbsp;&nbsp;&nbsp;Bastard<br/>
+              and&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;&nbsp;&nbsp;&nbsp;Baby&nbsp;&nbsp;&nbsp;&nbsp;Faces<br/>
+              PRESENTS:
+            </h1>
           </div>
-          <div class="col-sm-1 reset-wrapper">
-            <div class="reset"><button class="btn btn-primary">New Game</button></div>
-            
+          <div class="bvfb text-center">
+            <h1>CONNECT 4</h1>
+            <h2 id="vacancy">
+              Baby&nbsp;&nbsp;&nbsp;&nbsp;vs.<br/>
+              Fat&nbsp;&nbsp;&nbsp;&nbsp;Bastard
+            </h2>
           </div>
-          <div class="col-sm-10">
-            <div class="center-block header">
-              <canvas class="col-1 header-token" id="h1"></canvas>
-              <canvas class="col-2 header-token" id="h2"></canvas>
-              <canvas class="col-3 header-token" id="h3"></canvas>
-              <canvas class="col-4 header-token" id="h4"></canvas>
-              <canvas class="col-5 header-token" id="h5"></canvas>
-              <canvas class="col-6 header-token" id="h6"></canvas>
-              <canvas class="col-7 header-token" id="h7"></canvas>
-            </div>
-            <div class="center-block board-wrapper">
-              <div class="board-row board-row1">
-                <canvas class="col-1" id="1"></canvas>
-                <canvas class="col-2" id="2"></canvas>
-                <canvas class="col-3" id="3"></canvas>
-                <canvas class="col-4" id="4"></canvas>
-                <canvas class="col-5" id="5"></canvas>
-                <canvas class="col-6" id="6"></canvas>
-                <canvas class="col-7" id="7"></canvas>
-              </div>
-              <div class="board-row board-row2">
-                <canvas class="col-1" id="8"></canvas>
-                <canvas class="col-2" id="9"></canvas>
-                <canvas class="col-3" id="10"></canvas>
-                <canvas class="col-4" id="11"></canvas>
-                <canvas class="col-5" id="12"></canvas>
-                <canvas class="col-6" id="13"></canvas>
-                <canvas class="col-7" id="14"></canvas>
-              </div>
-              <div class="board-row board-row3">
-                <canvas class="col-1" id="15"></canvas>
-                <canvas class="col-2" id="16"></canvas>
-                <canvas class="col-3" id="17"></canvas>
-                <canvas class="col-4" id="18"></canvas>
-                <canvas class="col-5" id="19"></canvas>
-                <canvas class="col-6" id="20"></canvas>
-                <canvas class="col-7" id="21"></canvas>
-              </div>
-              <div class="board-row board-row4">
-                <canvas class="col-1" id="22"></canvas>
-                <canvas class="col-2" id="23"></canvas>
-                <canvas class="col-3" id="24"></canvas>
-                <canvas class="col-4" id="25"></canvas>
-                <canvas class="col-5" id="26"></canvas>
-                <canvas class="col-6" id="27"></canvas>
-                <canvas class="col-7" id="28"></canvas>
-              </div>
-              <div class="board-row board-row5">
-                <canvas class="col-1" id="29"></canvas>
-                <canvas class="col-2" id="30"></canvas>
-                <canvas class="col-3" id="31"></canvas>
-                <canvas class="col-4" id="32"></canvas>
-                <canvas class="col-5" id="33"></canvas>
-                <canvas class="col-6" id="34"></canvas>
-                <canvas class="col-7" id="35"></canvas>
-              </div>
-              <div class="board-row board-row6">
-                <canvas class="col-1 can-place" id="36"></canvas>
-                <canvas class="col-2 can-place" id="37"></canvas>
-                <canvas class="col-3 can-place" id="38"></canvas>
-                <canvas class="col-4 can-place" id="39"></canvas>
-                <canvas class="col-5 can-place" id="40"></canvas>
-                <canvas class="col-6 can-place" id="41"></canvas>
-                <canvas class="col-7 can-place" id="42"></canvas>
-              </div>
-            </div>
+          <div>
+            <a class="center-block btn btn-danger btn-lg" href="game.html">Click to Play</a>
           </div>
         </div>
       </div>
     </div>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#no').novacancy({
+        'reblinkProbability': 0.1,
+        'blinkMin': 0.2,
+        'blinkMax': 0.6,
+        'loopMin': 8,
+        'loopMax': 10,
+        'color': '#ffffff',
+        'glow': ['0 0 80px #ffffff', '0 0 30px #008000', '0 0 6px #0000ff']
+      }); 
+
+      $('#vacancy').novacancy({
+        'blink': 1,
+        'off': 1,
+        'color': 'Red',
+        'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
+      });
+    });
+  </script>
   </body>
 </html>
